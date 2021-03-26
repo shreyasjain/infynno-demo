@@ -1,0 +1,26 @@
+.sidebar-options{
+    margin: 1rem;
+    font-size: 12px;
+}
+
+.flex-column{
+    a{
+        color: gray;
+    }
+    a:hover{
+        color: white !important;
+    }
+}
+
+.sidebar-logo{
+    margin-bottom: 20px;
+    span{
+        font-weight: 1000;
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+    }
+    .logo-shade{
+        color: rgb(6, 185, 125);
+    }
+}
