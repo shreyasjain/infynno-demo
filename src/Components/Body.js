@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Axios from "axios"
 import { Form, FormControl, Button, DropdownButton, Dropdown } from 'react-bootstrap'
 import "../Styles/Body.scss"
+import SearchIcon from '@material-ui/icons/Search';
 
 function Body() {
 
@@ -22,7 +23,7 @@ function Body() {
             <div className="body-search custom-container">
                 <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline-success">Search</Button>
+                    <Button variant="outline-success"><SearchIcon/></Button>
                 </Form>
             </div>
             <div className="body-posters">
@@ -65,7 +66,7 @@ function Body() {
                         return(
                             <div className="body-movie-poster">
                         <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} />
-                        <h6>{movie.title}</h6>
+                        <h6>{movie.title.substring(0,20)}</h6>
                         <p>{movie.popularity}</p>
                     </div>
                         )

@@ -52,11 +52,20 @@
 .body-movies{
     display: flex;
     flex-wrap: wrap;
+    h6{
+        font-weight: 1000;
+        margin-top: 10px;
+        color: lightgray;
+    }
+    p{
+        color: gray;
+        font-size: 15px;
+    }
 }
 
 
 .body-movie-poster{
-    margin: 15px;
+    margin: 20px;
     height: 215px;
     width: 100px;
     img{
